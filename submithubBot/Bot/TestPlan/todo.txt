@@ -1,0 +1,74 @@
+*** {Upcomming} ***
+
+✅ 1. Import Selenium
+
+✅ 2. Update Url to submithub
+
+✅ 3. Create XPATH Locators for html elements 
+
+✅ 4. Create submithub account(s) for bot/bots
+
+*** {$Automation} ***
+
+✅ 5. Automate Authentication 
+
+✅ 6. Automate the process of uploading a spotify, soundcloud and youtube link to the "Submit a Song" option
+
+7. Automate the hashtag locators for each genre as a pipeline that  the bot can use.
+
+*** {Email Prescreen} ***
+
+8. Send an email asking for information.
+ - is the song already released?
+ - can the artist provide soundcloud, applemusic, and or spotify links?
+ - Do they want the free $30 package or $80 package?
+ - my profit margin =+ 100% ($60 or $160) for submithubBot (Factor useragent, headers, and proxy rotation into your price)
+ - when was the song released
+ - is this an unfinished song or demo?
+ - when is the scheduled release date?
+ - do you have a release date, yes or no?
+ - Which artists are you similar too?
+ - Do you have the lyrics for this song?
+ - is this song a remix or mashup? if so is it an official release? [do the have the permissions to release this cover?] if neither of these apply leave the area blank
+ - do you already have an account with submit hub?
+
+*** {todos} ***
+1. write a web scraper that extracts the answered questions from the email and puts it into the Json format or the input fields directly by creating empty lists that act as containers
+ - needs to check for incorrect spelling in scraped email data
+2. Groover Bot
+ - Instead of using submit hub alone I can use a submithub competitor Groover as well. I can Open Source submithub-bot and start on groover bot, seeing if it's easier to submit to the input fields.
+ - I can use other competitors instead of groover alone.
+3. Wallstream Bot
+ - This Wallstream is another submithub competitor as well. 
+ - Each of these competitors can act as an arm ofr a feature of the bot. This way the artists have the best chance of getting there music heard through multiple platforms. Also a way for me to increase profits.
+4. Muso Soup Bot
+ - Artist Management platform 
+ - Might be able to offer different curator platforms as separate payment packages / sub-packages
+
+5. Complete logic for every / almost every submit musiv task on submit hub
+
+6. (Above the browser) Write function(s) that scrape the data from 
+    - the answered questions in the email and runs 
+    - the data through a spell check api. Later the 
+    - data needs to get passed to the empty input fields / containers 
+    - to be sent to the forms on submithub's website.
+
+7. Open source this Bot to complete the payment authorization
+
+*** {Current Errors} ***
+✅ - Element is_release is obscured by a <span> tag check to see if xpath locator is corrector or try a different locator. / Can't click after scroll.
+✅ - locate check box issue: is_released isnt being found by xpath or css_selector
+🚫 - implement control flow for each option based on email answers
+✅ - Selenium recognizes the form. I have a print statement that tells me when the confirm payment button on the payment pop up is found. 
+🚫 - Selenium can't write to the card number field. maybe I need to locate the card input fields one by one before writing to the fields.
+🚫 - The code is written to enter credit card credentials but the input fields can't be found by selenium yet.
+✅  - Separate the function fields into different .py files 
+🚫 - Run the separate funtions frmo the run.py file 
+
+*** {Notes} ***
+1. (Writing to payment input field) 
+🚫 - Ive tried with action chains to move the element into view, 
+🚫 - WDW, 
+🚫 - outside of the try block, 
+🚫 - sleep() instead of WDW, 
+🚫 - Ive tried scroll to element with javascript embedded commands 
