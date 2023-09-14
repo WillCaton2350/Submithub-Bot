@@ -485,73 +485,11 @@ class webDriver:
                 By.XPATH,
             submit_toPlaylist).click()
             print("clicked","submit_toPlaylist")
-            self.driver.find_element(
-                By.XPATH,
-            next_payment).click()
-            print("clicked","next_payment")
+            #self.driver.find_element(
+            #    By.XPATH,
+            #next_payment).click()
+            #print("clicked","next_payment")
             sleep(2)
-            # LOCATE PAYMENT BUTTON ON POP UP FORM
-            #######################################
-            try:
-                WDW(
-                    self.driver, 10).until(
-                EC.presence_of_element_located((
-                By.XPATH,
-                confirmPaymentBtn
-                )))
-                print("confirm payment btn: found")
-            except ElementNotInteractableException as err:
-                print(err)
-            sleep(3)
-            # PAYMENT CARD DETAILS
-            ########################################
-            try:
-                cardNumElement = self.driver.find_element(
-                    By.CSS_SELECTOR, cardNumInput)
-                actions = AC(self.driver)
-                actions.move_to_element(
-                    cardNumElement).perform()
-                sleep(0.5)
-                self.driver.find_element(
-                    By.CSS_SELECTOR,
-                    cardNumInput).send_keys(
-                        cardNum)
-                print("written √")
-            except StaleElementReferenceException as err:
-                print(err)
-            sleep(1)
-            self.driver.find_element(
-                By.XPATH,
-                cvv_Input).send_keys(
-                    CVV)
-            print("written √")
-            sleep(1)
-            self.driver.find_element(
-                By.XPATH,
-                exp_Date_Input).send_keys(
-                    expDate)
-            print("written √")
-            sleep(1)
-            self.driver.find_element(
-                By.XPATH,
-                zipCodeInput).send_keys(
-                    zipCode)
-            print("written √")
-            try:
-                WDW(
-                    self.driver, 10).until(
-                EC.presence_of_element_located((
-                By.XPATH,
-                confirmPaymentBtn
-                )))
-                print("confirm payment btn: found")
-            except ElementNotInteractableException as err:
-                print(err)
-            sleep(2)
-            self.driver.find_element(
-                By.XPATH,
-                confirmPaymentBtn).click()
-            print("confirm payment btn: clicked")
     def close(self):
         print("Bot Closed")
         self.driver.close()
