@@ -67,11 +67,11 @@ class webDriver:
         self.driver.find_element(
             By.XPATH,
             usernameField).send_keys(
-        "alexa2savage@mailfence.com")
+        "email@mailfence.com")
         self.driver.find_element(
             By.XPATH,
             passwordField).send_keys(
-        "Comm@nd5354")
+        "password1234")
         self.driver.find_element(
             By.XPATH,
             login_SubmitBtn).send_keys(
