@@ -7,7 +7,7 @@ url = "https://www.submithub.com/"
 
 submitSongBtn = '/html/body/div[2]/div/div[1]/main/div[1]/div[1]/div/div/div/div/div/a'
 song_link = '//*[@id="paste-source"]'
-soundcloudWill = 'https://soundcloud.com/willcatonjr/mirror'
+soundcloudWill = 'https://soundcloud.com/songbyartist/title'
 soundcloud = 'https://soundcloud.com/johnnyyukon/whatever-you-want'
 spotify = ''
 applemusic = ''
