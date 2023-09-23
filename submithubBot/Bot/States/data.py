@@ -1,107 +1,81 @@
-geckoDriverPath = '/Users/administrator/Desktop/Projects/SeleniumProjects/submithubBot/Bot/Driver/geckodriver'
-loginBtn = '/html/body/div[2]/div/header/div/div/nav/div[2]/ul[1]/li[2]/div'
-login_SubmitBtn = '/html/body/div[2]/div/header/div/div/nav/div[2]/div[1]/div/form/div[3]/button'
-usernameField = '//*[@id="usernameOrEmail"]'
-passwordField = '//*[@id="password"]'
+gecko_driver_path = '/Users/administrator/Desktop/Projects/SeleniumProjects/submithubBot/Bot/Driver/geckodriver'
+login_btn = '/html/body/div[2]/div/header/div/div/nav/div[2]/ul[1]/li[2]/div'
+username =  "alexa2savage@mailfence.com"
+password = "Comm@nd5354"
+login_submit_btn = '/html/body/div[2]/div/header/div/div/nav/div[2]/div[1]/div/form/div[3]/button'
+username_field = '//*[@id="usernameOrEmail"]'
+password_field = '//*[@id="password"]'
 url = "https://www.submithub.com/"
 
-submitSongBtn = '/html/body/div[2]/div/div[1]/main/div[1]/div[1]/div/div/div/div/div/a'
+cmd_key = 'a'
 song_link = '//*[@id="paste-source"]'
-soundcloudWill = 'https://soundcloud.com/willcatonjr/mirror'
-soundcloud = 'https://soundcloud.com/johnnyyukon/whatever-you-want'
-spotify = ''
-applemusic = ''
+sound_cloud = 'https://soundcloud.com/johnnyyukon/whatever-you-want'
 
-is_not_released = '//*[@id="private"]'
 is_released = '/html/body/div[2]/div/div[1]/main/div[1]/div[2]/div[1]/form/div[1]/div[1]/label[1]'
-songReleased_Text = 'div.mrg-bottom-50:nth-child(1) > h5:nth-child(1) > span:nth-child(1)'
+song_released_text = 'div.mrg-bottom-50:nth-child(1) > h5:nth-child(1) > span:nth-child(1)'
 release_date = '//*[@id="datepicker"]'
 date = 'November 13, 2023 12:00 AM'
-date_container = []
+search_genre = "search-genres"
+os_env = "webdriver.firefox.driver"
 premium_credits = '//*[@id="premium-credits"]/div[3]'
-standardCreditsOption = 'div.btn.deep-purple.lighten-2'
 
-artistName = 'KULUSER BAKER'
-featureName = 'GUEANU VOY'
-newArtist = '/html/body/div[2]/div/div[1]/main/div[1]/div/div[1]/form/div[2]/div[2]/div[3]/label[1]'
-save_artist_Btn = '//*[@id="save-similar-artists"]'
-add_Genre = '//*[@id="choose-a-genre-popup"]'
-close_genre_Btn = 'div.modal-action.btn.teal.lighten-2'
-genre_Select = '/html/body/div[2]/div/div[1]/main/div[1]/div[4]/div[1]/div/div[2]/label[1]'
+artist_name_text = 'HALOBREACH'
+feature_name = 'Lil Gotit'
+new_artist = '/html/body/div[2]/div/div[1]/main/div[1]/div/div[1]/form/div[2]/div[2]/div[3]/label[1]'
+save_artist_btn = '//*[@id="save-similar-artists"]'
+add_genre = '//*[@id="choose-a-genre-popup"]'
+close_genre_btn = 'div.modal-action.btn.teal.lighten-2'
+genre_select = '/html/body/div[2]/div/div[1]/main/div[1]/div[4]/div[1]/div/div[2]/label[1]'
 genre_input = '/html/body/div[2]/div/div[1]/main/div[1]/div[4]/div[1]/div/div[1]/div[1]'
 
-newFeaturedArtist = '//*[@id="submit-container"]/form/div[2]/div[3]/div[4]/label[1]'
-select_Country = '/html/body/div[2]/div/div[1]/main/div[1]/div/div[1]/form/div[2]/div[2]/div[3]/div/div/div/select'
-select_Country2 = '//*[@id="additional_artist_1-country"]/select'
+select_country = '/html/body/div[2]/div/div[1]/main/div[1]/div/div[1]/form/div[2]/div[2]/div[3]/div/div/div/select'
+select_country_2 = '//*[@id="additional_artist_1-country"]/select'
 next_btn = '/html/body/div[2]/div/div[1]/main/div[1]/div[2]/div[1]/form/div[1]/div[3]/div[2]'
-nextBtn = '//*[@id="submit-container"]/form/div[2]/div[7]/div[2]'
-artistNameField = '//*[@id="artistId"]'
-curatorDashboard = '/html/body/div[2]/div/div[1]/main/div[1]/div[2]/div[2]/div/div[1]/div[6]/div/div/div[2]/div[3]/div[3]/div/div[1]/div[1]/div[1]'
+next_btn_ = '//*[@id="submit-container"]/form/div[2]/div[7]/div[2]'
+artist_name_field = '//*[@id="artistId"]'
+curator_dashboard = '/html/body/div[2]/div/div[1]/main/div[1]/div[2]/div[2]/div/div[1]/div[6]/div/div/div[2]/div[3]/div[3]/div/div[1]/div[1]/div[1]'
 
-featuredArtistsBtn = '/html/body/div[2]/div/div[1]/main/div[1]/div/div[1]/form/div[2]/div[3]/div'
-featuredArtistsBtn2 = '//*[@id="submit-container"]/form/div[2]/div[3]/div[4]/label[2]'
-featuredArtistsBtn3 = '/html/body/div[2]/div/div[1]/main/div[1]/div/div[1]/form/div[2]/div[3]/div[4]/label'
-notA_newArtist = '//*[@id="submit-container"]/form/div[2]/div[2]/div[3]/label[1]'
-next_Xpath = '//div[@class="right"]/div[@class="left btn teal lighten-2"]'
+featured_artists_btn = '/html/body/div[2]/div/div[1]/main/div[1]/div/div[1]/form/div[2]/div[3]/div'
+featured_artists_btn3 = '/html/body/div[2]/div/div[1]/main/div[1]/div/div[1]/form/div[2]/div[3]/div[4]/label'
+next_xpath = '//div[@class="right"]/div[@class="left btn teal lighten-2"]'
 small_grey_text='/html/body/div[2]/div/div[1]/main/div[1]/div/div[1]/form/div[2]/div[3]/div[4]/label/span/div'
+err_pg = "Error: Page not found"
 
-soundcloud_container = '/html/body/div/div[1]/div'
-song_title_Field = '//*[@id="2"]'
+song_title_field = '//*[@id="2"]'
 song_title = 'SongTitle'
-additional_Email_Confirmation = '/html/body/div[2]/div/div[1]/main/div[1]/div[2]/div[4]/div[1]/div[2]/label'
-next_Btn_Xpath = '/html/body/div[2]/div/div[1]/main/div[1]/div[2]/div[4]/div[3]'
-featuredArtistNameField = '//*[@id="additional_artist_1"]'
-first_Curator = '/html/body/div[2]/div/div[1]/main/div[1]/div[2]/div[2]/div/div[1]/div[6]/div/div/div[2]/label'
-submit_toPlaylist = '//*[@id="complete-submission"]'
+next_btn_xpath = '/html/body/div[2]/div/div[1]/main/div[1]/div[2]/div[4]/div[3]'
+featured_artist_name_field = '//*[@id="additional_artist_1"]'
+first_curator = '/html/body/div[2]/div/div[1]/main/div[1]/div[2]/div[2]/div/div[1]/div[6]/div/div/div[2]/label'
+submit_to_playlist = '//*[@id="complete-submission"]'
 US = 'United States'
-UK = 'United Kingdom'
 
-similar_Hiphop_Artist_list = ['Drake',"Young Thug","MadeinTYO","Trippie Redd",
+similar_hiphop_artist_list = ['Drake',"Young Thug","MadeinTYO","Trippie Redd",
                               "T-Pain","Blxst","Yeat","Wale","A$AP Ferg",
                               "Travis Scott","Future","DaBaby","Lil Baby",
                               "Ty Dolla $ign","Schoolboy Q","Metro Boomin", 
                               "Reo Cragun","Migos","Blueface","Gunna"
                               ]
 genre_List = ["Hip Hop","Rnb","Rap"]
-genreType = 'Rap'
-cardID = 'credit-card-number'
+genre_type = 'Rap'
 similar_artists = '//*[@id="spotify-artist-search"]'
-add_ArtistBtn = '//*[@id="similar-search"]/div[3]/div[1]/div/div[3]'
-paypal_Btn = 'div.paypal-button-row.paypal-button-number-0.paypal-button-layout-horizontal.paypal-button-shape-rect.paypal-button-number-single.paypal-button-env-production.paypal-button-color-gold.paypal-button-text-color-black.paypal-logo-color-blue'
+add_artist_btn = '//*[@id="similar-search"]/div[3]/div[1]/div/div[3]'
 
-moods_Opts='/html/body/div[2]/div/div[1]/main/div[1]/div[2]/div[3]/div[1]/div[7]/div[2]/label[12]' 
-next_payment='/html/body/div[2]/div/div[2]/div/div/div[3]'
-next_payment_2 = '/html/body/div[2]/div/div[2]/div/div/div/div/form/div[4]/div[2]'
-company_name_inputField = '//*[@id="1"]'
-company_Name = 'AutoPlay LLC'
-confirmPaymentBtn = '/html/body/div[2]/div/div[2]/div/div/div[1]/div[1]/div/div/div[2]'
-paypal_Opt='/html/body/div[2]/div/div[2]/div/div/div/div/form/div[3]/label[2]'
-artistSearch = '//*[@id="spotify-artist-search"]'
+moods_opts='/html/body/div[2]/div/div[1]/main/div[1]/div[2]/div[3]/div[1]/div[7]/div[2]/label[12]' 
+artist_search = '//*[@id="spotify-artist-search"]'
 
-mainArtistOption = 'label.mrg-bottom-10:nth-child(3)'
-lyrics_Option = '//*[@id="submit-container"]/form/div[3]/div[3]/div/div[1]/label[1]'
-lyrics_Lang = '//*[@id="submit-container"]/form/div[3]/div[3]/div/div[2]/div[2]/label[4]'
-explicit_Lyrics = '//*[@id="submit-container"]/form/div[3]/div[3]/div/div[2]/div[5]/div[2]/label[1]'
-no_explicit_Lyrics = ''
-no_clean_Version = '//*[@id="submit-container"]/form/div[3]/div[3]/div/div[3]/label[2]'
-yes_clean_Version = ''
-submit_A_SONG_TITLE = 'h1.teal-text'
+main_artist_option = 'label.mrg-bottom-10:nth-child(3)'
+lyrics_option = '//*[@id="submit-container"]/form/div[3]/div[3]/div/div[1]/label[1]'
+lyrics_lang = '//*[@id="submit-container"]/form/div[3]/div[3]/div/div[2]/div[2]/label[4]'
+explicit_lyrics = '//*[@id="submit-container"]/form/div[3]/div[3]/div/div[2]/div[5]/div[2]/label[1]'
+no_clean_version = '//*[@id="submit-container"]/form/div[3]/div[3]/div/div[3]/label[2]'
 
-cardNumInput='body > form:nth-child(3)'
-cardNum='0000111122223333'
-cvv_Input = '//*[@id="cvv"]'
-CVV = '123'
-exp_Date_Input = '//*[@id="expiration"]'
-expDate = '01/01/2029'
-zipCodeInput = '//*[@id="postal-code"]'
-zipCode = '22010'
 
-submitASong_sidebar_Btn = '//*[@id="sidebar"]/a[1]'
-insert_Lyrics_textArea = '//*[@id="paste-lyrics"]'
-finish_Upload = '//*[@id="submit-container"]/form/div[3]/button'
-submit_toCurators = '//*[@id="submit-wrapper"]/div/div[1]/div[1]'
-submit_toCurators_btn2 = '//*[@id="main-content"]/div[1]/div[2]/div[1]/div/div/div[1]/div/div[3]'
-lyrics_Text = """
+submit_a_song_sidebar_btn = '//*[@id="sidebar"]/a[1]'
+insert_lyrics_text_area = '//*[@id="paste-lyrics"]'
+finish_upload = '//*[@id="submit-container"]/form/div[3]/button'
+submit_to_curators = '//*[@id="submit-wrapper"]/div/div[1]/div[1]'
+submit_to_curators_btn2 = '//*[@id="main-content"]/div[1]/div[2]/div[1]/div/div/div[1]/div/div[3]'
+lyrics_text = """
 So I just came out the booth to goddamn, to hear this
 To hear this shit right here? And my niggas, niggas just sayin'
 "Bruh I just told 'em the same shit"
@@ -176,3 +150,30 @@ Better be the number one concern with, aye
 I got big dogs and they German, aye
 Aye, aye, aye, aye
 """
+
+print_var_login = print("login")
+print_var_browser = print("browser")
+print_var_bot_closed = print("Bot Closed")
+print_var_submit_song = print("submit_song")
+print_var_scroll_view = print("scroll_view")
+print_var_clicked_btn = print("clicked_btn")
+print_var_artist_info = print("artist_info")
+print_var_sound_a_like = print("sound_a_like")
+print_var_start_driver = print("start_driver")
+print_var_add_genre = print("add_genre clicked")
+print_var_moods_opts = print("moods_opts clicked")
+print_var_next_xpath =  print("next_xpath clicked")
+print_var_next_btn_ = print("next_btn_ Btn Clicked")
+print_var_payment_function = print("payment Function")
+print_var_genre_select = print("genre_select clicked")
+print_var_first_curator = print("first_curator clicked")
+print_var_add_artist_btn = print("add_artist_btn clicked")
+print_var_next_btn_xpath = print("next_btn_xpath clicked")
+print_var_save_artist_btn = print("save_artist_btn clicked")
+print_var_close_genre_btn = print("close_genre_btn clicked")
+print_var_playlist_submission = print("playlist_submission") 
+print_var_featured_artists_btn = print("featured_artists_btn")
+print_var_feature_name_keys = print("feature_name - keys sent")
+print_var_submit_to_playlist = print("submit_to_playlist clicked")
+print_var_featured_artists_btn3 = print("featured_artists_btn3 clicked")
+print_var_scrolled_to_element_curator_dashboard = print("Scrolled to Element curator_dashboard: found")

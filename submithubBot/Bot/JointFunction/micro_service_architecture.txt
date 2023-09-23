@@ -1,0 +1,2 @@
+Joint function folder is split into micro services
+Split every function in the monolith main.py file into the seperate files/functions/micro_service_architecture

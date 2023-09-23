@@ -1,14 +1,13 @@
 from main import webDriver
 
-
 if __name__ == "__main__":
     func = webDriver()
-    func.startDriver()
-    func.Browser()
+    func.start_driver()
+    func.browser()
     func.login()
-    func.submitSong()
-    func.scrollView()
-    func.artistInfo()
-    func.Playlist_submission()
-    func.Sound_Alike()
-    func.close()
+    func.submit_song()
+    func.scroll_view()
+    func.artist_info()
+    func.playlist_submission()
+    func.sound_a_like()
+    func.close_driver()

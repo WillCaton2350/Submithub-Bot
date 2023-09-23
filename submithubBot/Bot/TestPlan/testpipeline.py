@@ -1,3 +1,11 @@
+from States.data import gecko_driver_path, login_btn, username_field, song_link,artist_name_field,song_title_field, new_artist, curator_dashboard
+from States.data import no_clean_version, insert_lyrics_text_area, submit_to_curators_btn2, artist_name_text, moods_opts, submit_to_playlist
+from States.data import submit_a_song_sidebar_btn,similar_artists, save_artist_btn, feature_name, genre_select,first_curator
+from States.data import select_country, US, song_released_text, featured_artists_btn,main_artist_option, close_genre_btn,small_grey_text
+from States.data import password_field, login_submit_btn, next_btn, song_title, lyrics_lang, lyrics_text, submit_to_curators
+from States.data import next_btn_,select_country_2, lyrics_option, add_artist_btn, next_xpath, add_genre, next_btn_xpath
+from States.data import sound_cloud,featured_artist_name_field, is_released, release_date, date,similar_hiphop_artist_list
+from States.data import featured_artists_btn3, explicit_lyrics, finish_upload, premium_credits, genre_type, url,artist_search
 from selenium.common.exceptions import ElementClickInterceptedException
 from selenium.common.exceptions import ElementNotInteractableException
 from selenium.webdriver.support import expected_conditions as EC 
@@ -7,26 +15,27 @@ from urllib.error import HTTPError as PageNotFoundError
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By 
 from selenium import webdriver as web
-from States.data import *
-from time import sleep
+from time import sleep  
 import random   
 import os
 
+
 class webDriver:
     def __init__(self):
-        self.driver = None
-    def start_driver(self):
-        print(print_var_start_driver)
+        self.driver = None 
+    def startDriver(self):
+        print("start Driver")
+        #self.driver = web.Safari()
         firefox_options = web.FirefoxOptions()
         os.environ[
-            os_env
+            "webdriver.firefox.driver"
             ] =  gecko_driver_path
         self.driver = web.Firefox(
             options=firefox_options        
         )
         self.driver.maximize_window()
-    def browser(self):
-        print(print_var_browser)
+    def Browser(self):
+        print("Browser")
         self.driver.get(url)
         try:
             WDW(
@@ -36,10 +45,12 @@ class webDriver:
                         url))
         except PageNotFoundError as err:
             if err.code == 404:
-                print(err_pg)
+                print(
+        "Error: Page not found")
         # add exceptions not just print statements
+                
     def login(self):
-        print(print_var_login)
+        print("Login")
         try:
             WDW(
                 self.driver,
@@ -56,18 +67,19 @@ class webDriver:
         self.driver.find_element(
             By.XPATH,
             username_field).send_keys(
-        username)
+        "alexa2savage@mailfence.com")
         self.driver.find_element(
             By.XPATH,
             password_field).send_keys(
-        password)
+        "Comm@nd5354")
         self.driver.find_element(
             By.XPATH,
             login_submit_btn).send_keys(
                 Keys.ENTER)
         sleep(3)
-    def submit_song(self):
-        print(print_var_submit_song)
+
+    def submitSong(self):
+        print("submitSong")
         try:
             WDW(
                 self.driver,
@@ -99,8 +111,8 @@ class webDriver:
         songLink.send_keys(
             sound_cloud)
         
-    def scroll_view(self):
-        print(print_var_scroll_view)
+    def scrollView(self):
+        print("scrollView")
         sleep(5)
         self.driver.implicitly_wait(5)
         self.driver.execute_script(
@@ -118,7 +130,7 @@ class webDriver:
             self.driver.find_element(
             By.XPATH,
             is_released).click()
-            print(print_var_clicked_btn)
+            print("clickedBTN")
         except ElementClickInterceptedException as err:
             print(err)
         finally:
@@ -128,7 +140,7 @@ class webDriver:
         self.driver.find_element(
             By.XPATH,
             release_date).send_keys(
-                Keys.COMMAND + cmd_key)
+                Keys.COMMAND + 'a')
         self.driver.find_element(
             By.XPATH,
             release_date).send_keys(
@@ -156,8 +168,11 @@ class webDriver:
             ).click()
         sleep(2)
 
-    def artist_info(self):
-        print(print_var_artist_info)
+
+        
+
+    def artistInfo(self):
+        print("artistInfo")
         try:
             WDW(
                 self.driver,10).until(
@@ -198,13 +213,13 @@ class webDriver:
         self.driver.find_element(
             By.XPATH,
         featured_artists_btn).click()
-        print(print_var_featured_artists_btn)
+        print("featured_artists_btn clicked")
         try:
             self.driver.find_element(
                 By.XPATH,
             featured_artist_name_field
             ).send_keys(feature_name)
-            print(print_var_feature_name_keys,
+            print("feature_name - keys sent",
                   feature_name)
         except NoSuchElementException as e:
             print(e)
@@ -219,7 +234,7 @@ class webDriver:
             By.XPATH,
             featured_artists_btn3
             ).click()
-        print(print_var_featured_artists_btn3,
+        print("featured_artists_btn3 clicked",
               featured_artists_btn3)
         sleep(2)
         self.driver.find_element(
@@ -242,7 +257,7 @@ class webDriver:
         self.driver.find_element(
             By.XPATH,
             next_btn_).click()
-        print(print_var_next_btn_)
+        print("Btn Clicked")
         sleep(2)
         try:
             WDW(
@@ -313,7 +328,7 @@ class webDriver:
         self.driver.execute_script(
             "arguments[0].scrollIntoView();",
         self.driver.find_element(
-            By.XPATH,
+            By.XPATH, 
             finish_upload
             ))
         try:
@@ -329,8 +344,8 @@ class webDriver:
             By.XPATH,
             finish_upload).click()
         
-    def playlist_submission(self):
-        print(print_var_playlist_submission)
+    def Playlist_submission(self):
+        print("playlist submission")
         try:
             WDW(
                 self.driver,10
@@ -371,8 +386,8 @@ class webDriver:
             premium_credits).click()
         print("clicked",premium_credits)
         
-    def sound_a_like(self):
-        print(print_var_sound_a_like)
+    def Sound_Alike(self):
+        print("sound alike")
         try:
             WDW(
                 self.driver,10
@@ -401,39 +416,38 @@ class webDriver:
             self.driver.find_element(
                 By.XPATH,
                 add_artist_btn).click()
-            print(print_var_add_artist_btn)
+            print("add_artist_btn clicked")
             self.driver.find_element(
                 By.XPATH,
                 save_artist_btn).click()
-            print(print_var_save_artist_btn)
+            print("save_artist_btn clicked")
             sleep(1)
             self.driver.find_element(
                 By.XPATH,add_genre).click()
-            print(print_var_add_genre)
+            print("add_genre clicked")
             sleep(1)
             element = self.driver.find_element(
                 By.ID,
-                search_genre)
+                "search-genres")
             self.driver.execute_script(
                 "arguments[0].scrollIntoView();", 
                 element)
             element.send_keys(
             # add a for loop for hip-hop sub genres 
-            # possibly see if you can implement a 
-            # list comprehension [for i in (container)]
+            # possibly see if you can implement a list comprehension [for i in container]
                 genre_type)
             print(genre_type," - keys sent")
             sleep(1)
             self.driver.find_element(
                 By.XPATH,
                 genre_select).click()
-            print(print_var_genre_select)
+            print("genre_select clicked")
             sleep(1)
             self.driver.find_element(
                 By.CSS_SELECTOR,
                 close_genre_btn
                 ).click()
-            print(print_var_close_genre_btn)
+            print("close_genre_btn clicked")
             sleep(1)
             self.driver.execute_script(
             "arguments[0].scrollIntoView();",
@@ -444,39 +458,40 @@ class webDriver:
             self.driver.find_element(
                 By.XPATH,
                 moods_opts).click()
-            print(print_var_moods_opts)
+            print("moods_opts clicked")
             sleep(1)
             try:
                 self.driver.find_element(
                     By.XPATH,
                     next_xpath).click()
-                print(print_var_next_xpath)
+                print("next_xpath clicked")
             except ElementNotInteractableException as err:
                 print(err)
             sleep(1)
             self.driver.find_element(
                 By.XPATH,
             next_btn_xpath).click()
-            print(print_var_next_btn_xpath)
+            print("next_btn_xpath clicked")
             sleep(2)
-            print(print_var_payment_function)
+            print("payment Function")
             sleep(1)
             self.driver.execute_script(
         "arguments[0].scrollIntoView();",
         self.driver.find_element(
             By.XPATH,
-            curator_dashboard))
-            print(print_var_scrolled_to_element_curator_dashboard)
+            curator_dashboard
+            ))
+            print("Scrolled to Element curator_dashboard: found")
             sleep(2)
             self.driver.find_element(
                 By.XPATH,
             first_curator).click()
-            print(print_var_first_curator)
+            print("clicked","first_curator")
             sleep(1)
             self.driver.find_element(
                 By.XPATH,
             submit_to_playlist).click()
-            print(print_var_submit_to_playlist)
-    def close_driver(self):
+            print("clicked","submit_to_playlist")
+    def close(self):
         self.driver.close()
-        print(print_var_bot_closed)
+        print("Bot Closed")

@@ -72,3 +72,12 @@
 🚫 - outside of the try block, 
 🚫 - sleep() instead of WDW, 
 🚫 - Ive tried scroll to element with javascript embedded commands 
+✅ - Fix naming conventions
+✅ - Delete dead environment variables
+🚫 - refactor for each joint function
+
+
+2. Conditional control flow
+- Possibly have an States variable list in data.py that calls a specific f-string that switches genre, alike artists, etc credentials to add control flow to the pipeline. 
+- Some kind of conditional at the top that directs which piple to go through based on the genre of the song. if statement at the top?
+- The conditional split would happen at the artist info function 
