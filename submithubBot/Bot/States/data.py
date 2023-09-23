@@ -1,7 +1,7 @@
 gecko_driver_path = '/Users/administrator/Desktop/Projects/SeleniumProjects/submithubBot/Bot/Driver/geckodriver'
 login_btn = '/html/body/div[2]/div/header/div/div/nav/div[2]/ul[1]/li[2]/div'
-username =  "alexa2savage@mailfence.com"
-password = "Comm@nd5354"
+username =  "username"
+password = "password"
 login_submit_btn = '/html/body/div[2]/div/header/div/div/nav/div[2]/div[1]/div/form/div[3]/button'
 username_field = '//*[@id="usernameOrEmail"]'
 password_field = '//*[@id="password"]'
